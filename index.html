@@ -3,189 +3,269 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Arun K - Portfolio</title>
+  <title>Arun K – Software Developer</title>
+
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
-        integrity="sha384-9ndCyUa6mYgWWqV+nXkPvM4GJrQHn9k7l29D3yXg1kSJeW/6Waiy5ZT+nNsQFST" crossorigin="anonymous" />
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-OPmP6+UZc4iVq0vBxXfUGcZ3P+neticQ28cu0ZbnYSpb8ZhpiAlYnYJz5+6JGHb2"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    /* Hero section background */
     header {
-      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.4&auto=format&fit=crop&w=1600&q=80');
-      background-size: cover;
-      background-position: center;
+      background: url('hero-bg.jpg') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      color: white;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
     }
+    header .lead { opacity: 0.9; }
+    section { padding: 4rem 0; }
+    footer { padding: 2rem 0; }
   </style>
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
 
-<!-- Navbar -->
-<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#about">Arun K</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" 
-            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- Hero Section -->
-<header class="py-5 text-center text-white">
-  <div class="container">
-    <h1 class="display-4 fw-bold">Arun K</h1>
-    <p class="lead mb-4">Software Developer | Blazor & ASP.NET Expert</p>
-    <a href="#contact" class="btn btn-lg btn-light me-2 mb-2">Contact Me</a>
-    <a href="#skills" class="btn btn-lg btn-outline-light mb-2">My Skills</a>
-  </div>
-</header>
-
-<!-- About Me -->
-<section id="about" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-4">About Me</h2>
-    <p class="lead text-center">
-      I am a passionate Software Developer with over 3 years of experience specializing in Blazor, ASP.NET, and modern web development practices. Adept at building high-performance, scalable, and responsive web applications with a keen focus on UI/UX and performance optimization.
-    </p>
-    <div class="row justify-content-center mt-4">
-      <div class="col-md-8 text-center">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><strong>Name:</strong> Arun K</li>
-          <li class="list-group-item"><strong>Location:</strong> Tamil Nadu, India</li>
-          <li class="list-group-item"><strong>Email:</strong> <a href="mailto:arunkavisiva@gmail.com">arunkavisiva@gmail.com</a></li>
-          <li class="list-group-item"><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/arun-k-siva" target="_blank">linkedin.com/in/arun-k-siva</a></li>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70">
+  <!-- Navbar -->
+  <nav
+    id="mainNav"
+    class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top"
+  >
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Arun K</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navContent"
+        aria-controls="navContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
-  </div>
-</section>
+  </nav>
 
-<!-- Skills -->
-<section id="skills" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Technical Skills</h2>
-    <div class="row g-4">
-      <!-- Programming Languages -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title"><i class="bi bi-code-slash"></i> Programming Languages</h5>
-            <ul class="list-unstyled mb-0">
-              <li><i class="bi bi-check2-circle text-primary"></i> C#</li>
-              <li><i class="bi bi-check2-circle text-primary"></i> JavaScript</li>
-              <li><i class="bi bi-check2-circle text-primary"></i> TypeScript</li>
-            </ul>
+  <!-- Hero -->
+  <header class="text-center">
+    <div class="container">
+      <h1 class="display-4 fw-light">Arun K</h1>
+      <p class="lead">Software Developer | Blazor & ASP.NET Expert</p>
+      <a href="#contact" class="btn btn-lg btn-light me-2">Contact Me</a>
+      <a href="#skills" class="btn btn-lg btn-outline-light">My Skills</a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">About Me</h2>
+      <p class="mx-auto" style="max-width:700px;">
+        I am a passionate software developer with <strong>3+ years of experience</strong>
+        in the Blazor framework, specializing in high-performance web components.
+        I excel at performance optimization, collaborative problem-solving,
+        and leveraging AI-assisted workflows.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="text-center mb-5">Technical Skills</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="bi bi-code-slash text-primary"></i>
+                Programming Languages
+              </h5>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check2-circle text-success"></i> C#</li>
+                <li><i class="bi bi-check2-circle text-success"></i> JavaScript</li>
+                <li><i class="bi bi-check2-circle text-success"></i> TypeScript</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Frameworks & Tools -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title"><i class="bi bi-tools"></i> Frameworks & Tools</h5>
-            <ul class="list-unstyled mb-0">
-              <li><i class="bi bi-check2-circle text-primary"></i> Blazor</li>
-              <li><i class="bi bi-check2-circle text-primary"></i> ASP.NET</li>
-              <li><i class="bi bi-check2-circle text-primary"></i> Visual Studio</li>
-              <li><i class="bi bi-check2-circle text-primary"></i> Git</li>
-            </ul>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="bi bi-tools text-primary"></i>
+                Frameworks & Tools
+              </h5>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check2-circle text-success"></i> Blazor</li>
+                <li><i class="bi bi-check2-circle text-success"></i> ASP.NET</li>
+                <li><i class="bi bi-check2-circle text-success"></i> Git & VS</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Development Practices -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title"><i class="bi bi-lightning-charge"></i> Practices & Others</h5>
-            <ul class="list-unstyled mb-0">
-              <li><i class="bi bi-check2-circle text-primary"></i> Agile Scrum</li>
-              <li><i class="bi bi-check2-circle text-primary"></i> Code Reviews</li>
-              <li><i class="bi bi-check2-circle text-primary"></i> Performance Optimization</li>
-              <li><i class="bi bi-check2-circle text-primary"></i> AI & Productivity Tools</li>
-            </ul>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="bi bi-brush text-primary"></i>
+                Web & AI Tools
+              </h5>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check2-circle text-success"></i> HTML & CSS</li>
+                <li><i class="bi bi-check2-circle text-success"></i> Bootstrap 5</li>
+                <li><i class="bi bi-check2-circle text-success"></i> Prompt Engineering</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Experience -->
-<section id="experience" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-4">Experience</h2>
-    <div class="card mb-3 shadow-sm">
-      <div class="card-body">
-        <h4 class="card-title">Software Developer - Syncfusion</h4>
-        <h6 class="card-subtitle mb-2 text-muted">August 2022 – Present</h6>
-        <ul>
-          <li>Developed complex Blazor components including Spreadsheet and Gantt Chart with optimized performance.</li>
-          <li>Authored over 200 B-Unit test cases ensuring high reliability.</li>
-          <li>Integrated AI-assisted features to optimize workflows.</li>
-        </ul>
+  <!-- Experience -->
+  <section id="experience" class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Work Experience</h2>
+
+      <!-- Syncfusion -->
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div>
+              <h5 class="card-title">Software Developer Level 2</h5>
+              <p class="text-primary mb-1">Syncfusion | Chennai, Tamil Nadu</p>
+            </div>
+            <p class="fst-italic text-muted">Sep 2022 – Present</p>
+          </div>
+          <ul>
+            <li>Developed high-performance Blazor components (Spreadsheet, Gantt Chart).</li>
+            <li>Authored 200+ B-Unit test cases for component reliability.</li>
+            <li>Optimized load times and improved UX by addressing performance bottlenecks.</li>
+            <li>Collaborated in Agile sprints with product managers and QA.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Prompt Engineering -->
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div>
+              <h5 class="card-title">Prompt Engineering for Devs</h5>
+              <p class="text-primary mb-1">Self-Directed Learning</p>
+            </div>
+            <p class="fst-italic text-muted">2025</p>
+          </div>
+          <ul>
+            <li>Crafted effective prompts for AI-driven code generation.</li>
+            <li>Integrated AI into daily development for debugging and docs.</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Education -->
-<section id="education" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Education</h2>
-    <div class="card shadow-sm mb-3">
-      <div class="card-body">
-        <h4 class="card-title">B.E. in Electronics & Communication Engineering</h4>
-        <p class="mb-0"><strong>Ramco Institute of Technology, Tamil Nadu (2014 - 2018)</strong></p>
-        <p>Graduated with honors, focusing on embedded systems and communication protocols.</p>
+  <!-- Education -->
+  <section id="education">
+    <div class="container">
+      <h2 class="text-center mb-5">Education</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">B.E. – ECE</h5>
+              <p class="text-primary mb-1">Ramco Institute of Technology</p>
+              <p>2019 – 2022 | CGPA: 7.3/10</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">HSC</h5>
+              <p class="text-primary mb-1">N.A. Annaparaja Memorial Hr. Sec. School</p>
+              <p>2018 | 76.7%</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">SSLC</h5>
+              <p class="text-primary mb-1">N.A. Annaparaja Memorial Hr. Sec. School</p>
+              <p>2016 | 80%</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Contact -->
-<section id="contact" class="py-5 bg-light">
-  <div class="container text-center">
-    <h2 class="mb-4">Contact Me</h2>
-    <p class="lead">Get in touch for collaborations or opportunities!</p>
-    <a href="mailto:arunkavisiva@gmail.com" class="btn btn-primary mb-2"><i class="bi bi-envelope"></i> Email</a>
-    <a href="https://linkedin.com/in/arun-k-siva" target="_blank" class="btn btn-outline-primary mb-2"><i class="bi bi-linkedin"></i> LinkedIn</a>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-dark text-white py-4 mt-4">
-  <div class="container d-flex justify-content-center justify-content-between flex-wrap">
-    <p class="mb-0">&copy; 2025 Arun K</p>
-    <div>
-      <a href="https://linkedin.com/in/arun-k-siva" class="text-white me-3" target="_blank" title="LinkedIn">
-        <i class="bi bi-linkedin fs-4"></i>
+  <!-- Contact -->
+  <section id="contact" class="bg-light text-center">
+    <div class="container">
+      <h2 class="mb-4">Let’s Connect</h2>
+      <p>Feel free to reach out via email or LinkedIn.</p>
+      <a href="mailto:arunkavisiva@gmail.com" class="btn btn-primary me-2">
+        <i class="bi bi-envelope"></i> Email Me
       </a>
-      <a href="mailto:arunkavisiva@gmail.com" class="text-white" title="Email">
-        <i class="bi bi-envelope fs-4"></i>
+      <a
+        href="https://www.linkedin.com/in/arun-k-siva"
+        class="btn btn-outline-primary"
+        target="_blank"
+      >
+        <i class="bi bi-linkedin"></i> LinkedIn
       </a>
     </div>
-  </div>
-</footer>
+  </section>
 
-<!-- Bootstrap JS Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoLp4Uo7LEPk3z0X69uN3/gFAdGiEn4WWoV+1VQ+3KSbK0a" crossorigin="anonymous"></script>
+  <!-- Footer -->
+  <footer class="bg-dark text-white">
+    <div
+      class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
+    >
+      <p class="mb-2 mb-md-0">© 2025 Arun K</p>
+      <div>
+        <a href="https://github.com/arunk-hub" class="text-white me-3" target="_blank">
+          <i class="bi bi-github fs-4"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/arun-k-siva"
+          class="text-white me-3"
+          target="_blank"
+        >
+          <i class="bi bi-linkedin fs-4"></i>
+        </a>
+        <a href="mailto:arunkavisiva@gmail.com" class="text-white">
+          <i class="bi bi-envelope fs-4"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Q2ZdhSpUqRGuT4NlaflLKKVnxOo2QVn7yJ4oh2iqXdraj+P4T4RVQW+fSE3f2tJe"
+    crossorigin="anonymous"
+  ></script>
 </body>
 </html>
-Instructions:
