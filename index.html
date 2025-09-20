@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arun K - Software Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+        }
+
+        .header-content .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .contact-info div {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        nav {
+            background: #2c3e50;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #34495e;
+        }
+
+        section {
+            padding: 3rem 0;
+            margin: 2rem 0;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            width: 50px;
+            height: 3px;
+            background: #667eea;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .skill-category h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .skill-category ul {
+            list-style: none;
+        }
+
+        .skill-category li {
+            padding: 0.3rem 0;
+            position: relative;
+            padding-left: 1rem;
+        }
+
+        .skill-category li::before {
+            content: '▸';
+            color: #667eea;
+            position: absolute;
+            left: 0;
+        }
+
+        .experience-item {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 4px solid #667eea;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .experience-title {
+            flex: 1;
+        }
+
+        .experience-title h3 {
+            color: #2c3e50;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .company-info {
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .duration {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .experience-details ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .experience-details li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .experience-details li::before {
+            content: '●';
+            color: #667eea;
+            position: absolute;
+            left: 0;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #555;
+        }
+
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .education-item {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .education-item h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .institution {
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 1rem 0.5rem;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background: #5a67d8;
+        }
+
+        @media (max-width: 768px) {
+            .header-content h1 {
+                font-size: 2rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .experience-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Arun K</h1>
+                <div class="subtitle">Software Developer</div>
+                <div class="contact-info">
+                    <div>📞 +91 6382366755</div>
+                    <div>✉️ arunkavisiva@gmail.com</div>
+                    <div>📍 Vengaivasal, Chennai - 600073</div>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <a href="http://www.linkedin.com/in/arun-k-siva" class="btn" target="_blank">LinkedIn Profile</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-text">
+                I am a passionate software developer with <span class="highlight">over 3 years of experience</span> in the Blazor framework, 
+                specializing in designing high-performance web components. I excel at identifying and fixing performance issues, 
+                collaborating with product managers, and quickly resolving critical problems. I am committed to high coding 
+                standards and proficient in <span class="highlight">Agile Scrum practices</span>. Currently seeking opportunities to apply my skills and grow in 
+                emerging technologies while leveraging my evolving knowledge of <span class="highlight">AI-assisted development</span>.
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>C#</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Tools</h3>
+                    <ul>
+                        <li>Blazor</li>
+                        <li>ASP.NET</li>
+                        <li>Visual Studio</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Technologies</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>AI & Productivity Tools</h3>
+                    <ul>
+                        <li>Prompt Engineering</li>
+                        <li>AI-enhanced workflow</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Development Practices</h3>
+                    <ul>
+                        <li>Agile Scrum</li>
+                        <li>Code Reviews</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <h3>Software Developer Level 2</h3>
+                        <div class="company-info">Syncfusion | Chennai, Tamil Nadu</div>
+                    </div>
+                    <div class="duration">September 2022 - Present</div>
+                </div>
+                <div class="experience-details">
+                    <ul>
+                        <li><strong>Blazor Framework Expertise:</strong> Developed and maintained advanced web components using the Blazor framework for over two years, ensuring high performance and seamless integration.</li>
+                        <li><strong>Component Innovation:</strong> Led the development of new Blazor components, including the feature-rich Blazor Spreadsheet, improving usability and functionality.</li>
+                        <li><strong>Agile Development:</strong> Actively participated in daily stand-ups, sprint planning, and retrospectives to drive efficient workflows.</li>
+                        <li><strong>Syncfusion Gantt Chart:</strong> Spearheaded the development and optimization of the Syncfusion Gantt Chart component for Blazor ASP.NET, addressing performance challenges to enhance user experience.</li>
+                        <li><strong>Collaborative Problem-Solving:</strong> Partnered with product managers to develop user-centric solutions and swiftly diagnose and resolve critical issues.</li>
+                        <li><strong>Code Quality & Reviews:</strong> Maintained high coding standards through rigorous code reviews and constructive feedback loops.</li>
+                        <li><strong>Product Enhancement:</strong> Identified and resolved performance bottlenecks, aligning technical solutions with business objectives.</li>
+                        <li><strong>B-Unit Test Coverage:</strong> Authored over 200 B-Unit test cases specifically for the Blazor Spreadsheet component, significantly improving test coverage, stability, and maintainability of the product.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <h3>Professional Development</h3>
+                        <div class="company-info">Prompt Engineering for Developers</div>
+                    </div>
+                    <div class="duration">Self-directed Learning - 2025</div>
+                </div>
+                <div class="experience-details">
+                    <ul>
+                        <li>Gained foundational knowledge of crafting effective prompts for generative AI tools</li>
+                        <li>Explored use cases in debugging, documentation, and code generation</li>
+                        <li>Applied skills in daily development to accelerate problem-solving and enhance component design</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-grid">
+                <div class="education-item">
+                    <h3>Bachelor of Engineering</h3>
+                    <div class="institution">Ramco Institute of Technology</div>
+                    <div><strong>Major:</strong> Electronics and Communication Engineering</div>
+                    <div><strong>CGPA:</strong> 7.3/10</div>
+                    <div><strong>Duration:</strong> 2019 - 2022</div>
+                </div>
+                <div class="education-item">
+                    <h3>Higher Secondary Certificate</h3>
+                    <div class="institution">N.A. Annaparaja Memorial Hr. Sec. School</div>
+                    <div><strong>Percentage:</strong> 76.7%</div>
+                    <div><strong>Year:</strong> 2018</div>
+                </div>
+                <div class="education-item">
+                    <h3>Secondary School Leaving Certificate</h3>
+                    <div class="institution">N.A. Annaparaja Memorial Hr. Sec. School</div>
+                    <div><strong>Percentage:</strong> 80%</div>
+                    <div><strong>Year:</strong> 2016</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Let's Connect</h2>
+            <div class="about-text">
+                I'm always interested in discussing new opportunities, collaborating on projects, or sharing knowledge about web development. 
+                Feel free to reach out through any of the contact methods listed above.
+                <div style="margin-top: 2rem;">
+                    <a href="mailto:arunkavisiva@gmail.com" class="btn">Send Email</a>
+                    <a href="http://www.linkedin.com/in/arun-k-siva" class="btn" target="_blank">Connect on LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Arun K. All rights reserved.</p>
+            <p>This portfolio showcases my journey as a software developer and my commitment to creating high-quality, performant web applications.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add active state to navigation
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
