@@ -1,143 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Software Developer Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Arun K — Software Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav-bar">
-      <div class="logo">Your Name</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="mobile-nav-toggle" aria-label="Toggle navigation">
-        ☰
-      </button>
-    </nav>
-  </header>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Arun K</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobile-toggle">☰</button>
+        </nav>
+    </header>
 
-  <main>
-    <section id="about" class="panel about-panel">
-      <h1>About Me</h1>
-      <p>
-        I am a passionate software developer with over 3 years of experience
-        in the Blazor framework, specializing in designing high-performance
-        web components. I excel at identifying and fixing performance issues,
-        collaborating with product managers, and quickly resolving critical
-        problems. I am committed to high coding standards and proficient in
-        Agile Scrum practices. Currently seeking opportunities to apply my
-        skills and grow in emerging technologies while leveraging my evolving
-        knowledge of AI-assisted development.
-      </p>
-    </section>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <span class="badge">Hello! I’m Arun K</span>
+                <h1>Software Developer &amp; Blazor Specialist</h1>
+                <p>Building interactive, high-performance web applications using Blazor, ASP.NET Core, and AI-enhanced workflows.</p>
+                <div class="actions">
+                    <a href="Arun-K-Software-developer.pdf" class="btn btn-primary" download>Download CV</a>
+                    <a href="#contact" class="btn btn-download">Let’s Chat</a>
+                </div>
+                <div class="stats">3+ Years Experience</div>
+            </div>
+            <div class="hero-image">
+                <img src="arun-photo.jpg" alt="Arun K" />
+            </div>
+        </section>
 
-    <section id="skills" class="panel skills-panel">
-      <h2>Technical Skills</h2>
-      <div class="skills-grid">
-        <div>
-          <h3>Programming Languages</h3>
-          <ul>
-            <li>C#</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Frameworks & Tools</h3>
-          <ul>
-            <li>Blazor</li>
-            <li>ASP.NET</li>
-            <li>Visual Studio</li>
-            <li>Git</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Web Technologies</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
-        </div>
-        <div>
-          <h3>AI & Productivity</h3>
-          <ul>
-            <li>Prompt Engineering</li>
-            <li>AI-enhanced workflow</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Practices</h3>
-          <ul>
-            <li>Agile Scrum</li>
-            <li>Code Reviews</li>
-            <li>Performance Optimization</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate software developer with over three years of experience specializing in the Blazor framework. My expertise includes designing high-performance web components, collaborating in Agile teams, and implementing AI-assisted workflows.</p>
+        </section>
 
-    <section id="experience" class="panel experience-panel">
-      <h2>Work Experience</h2>
-      <div class="job">
-        <h3>Software Developer Level 2</h3>
-        <p class="job-meta">Syncfusion | Chennai, Tamil Nadu | Sept 2022 – Present</p>
-        <ul>
-          <li>Developed and maintained advanced Blazor components for high performance.</li>
-          <li>Led development of Blazor Spreadsheet, improving usability and functionality.</li>
-          <li>Spearheaded Syncfusion Gantt Chart optimization to enhance user experience.</li>
-          <li>Partnered with product managers to deliver user-centric solutions and resolve critical issues.</li>
-          <li>Authored 200+ B-Unit test cases to improve test coverage and product stability.</li>
-        </ul>
-      </div>
-    </section>
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Programming Languages</h3>
+                    <p>C#, JavaScript, TypeScript</p>
+                </div>
+                <div class="card">
+                    <h3>Frameworks &amp; Tools</h3>
+                    <p>Blazor, ASP.NET</p>
+                </div>
+                <div class="card">
+                    <h3>Web Technologies</h3>
+                    <p>HTML, CSS</p>
+                </div>
+                <div class="card">
+                    <h3>Development Tools</h3>
+                    <p>Git, Visual Studio</p>
+                </div>
+                <div class="card">
+                    <h3>AI &amp; Productivity</h3>
+                    <p>Prompt Engineering, AI-enhanced workflow</p>
+                </div>
+                <div class="card">
+                    <h3>Practices</h3>
+                    <p>Agile Scrum, Code Reviews, Performance Optimization</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="education" class="panel education-panel">
-      <h2>Education</h2>
-      <ul>
-        <li>
-          <strong>Bachelor of Engineering</strong>, Electronics and Communication
-          Engineering, Ramco Institute of Technology (2019–2022) — CGPA: 7.3/10
-        </li>
-        <li>
-          <strong>Higher Secondary Certificate</strong>, N.A. Annaparaja Memorial Hr. Sec. School (2018) — 76.7%
-        </li>
-        <li>
-          <strong>Secondary School Leaving Certificate</strong>, N.A. Annaparaja Memorial Hr. Sec. School (2016) — 80%
-        </li>
-      </ul>
-    </section>
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Software Developer Level 2</h3>
+                    <p class="meta">Syncfusion · Chennai · Sept 2022 – Present</p>
+                    <ul>
+                        <li>Architected and implemented advanced Blazor components.</li>
+                        <li>Optimized Gantt Chart load times by 40%.</li>
+                        <li>Authored 200+ B-Unit test cases for &gt;90% coverage.</li>
+                        <li>Led Agile ceremonies and mentored junior devs.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact" class="panel contact-panel">
-      <h2>Contact</h2>
-      <p>I'm always interested in discussing new opportunities or projects.</p>
-      <p>
-        <a href="mailto:your.email@example.com" class="btn">Send Email</a>
-        <a href="https://linkedin.com/in/yourprofile" class="btn btn-outline">LinkedIn</a>
-      </p>
-    </section>
-  </main>
+        <section id="education">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>2019 – 2022</h3>
+                    <p><strong>B.E. Electronics &amp; Communication Engineering</strong><br />Ramco Institute of Technology — CGPA: 7.3/10</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2018</h3>
+                    <p><strong>Higher Secondary (HSC)</strong><br />N.A. Annaparaja Memorial Hr. Sec. School — 76.7%</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2016</h3>
+                    <p><strong>Secondary School (SSLC)</strong><br />N.A. Annaparaja Memorial Hr. Sec. School — 80%</p>
+                </div>
+            </div>
+        </section>
 
-  <footer class="site-footer">
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
-  </footer>
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>📞 +91 63823 66755</p>
+            <p>✉️ <a href="mailto:arunkavisiva@gmail.com">arunkavisiva@gmail.com</a></p>
+            <a href="https://linkedin.com/in/arun-k-siva" class="btn btn-primary">Connect on LinkedIn</a>
+        </section>
+    </main>
 
-  <script>
-    const toggleButton = document.querySelector('.mobile-nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    toggleButton.addEventListener('click', () => {
-      navLinks.classList.toggle('nav-open');
-    });
-  </script>
+    <footer class="footer">
+        <div class="container"><p>&copy; 2025 Arun K. All rights reserved.</p></div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('mobile-toggle');
+        const menu = document.getElementById('nav-menu');
+        toggle.addEventListener('click', () => menu.classList.toggle('open'));
+    </script>
 </body>
 </html>
