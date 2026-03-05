@@ -3,152 +3,57 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Arun K - Software Developer Portfolio</title>
+    <title>Arun K - ASP.NET Developer</title>
     <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-
 </head>
-<body>
+<body data-theme="light">
     <header>
         <div class="navbar container">
-            <a href="#" class="logo">Arun K</a>
+            <a href="#" class="logo">ARUN<span style="color:var(--accent)">.K</span></a>
             <nav class="nav-links">
-                <a href="#home">HOME</a>
-                <a href="#about">ABOUT</a>
-                <a href="#contact">CONTACT</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <button id="theme-switch" class="theme-toggle">
+                    <i class="fas fa-moon"></i> Dark Mode
+                </button>
             </nav>
         </div>
     </header>
 
     <main class="container">
         <section id="home" class="hero-card">
-            <div class="hero-info">
-                <span class="hero-badge">Hello! I’m Arun K</span>
-                <div class="hero-title">Software Developer &amp; Blazor Specialist</div>
-                <div class="hero-desc">
-                    Building interactive, high-performance web applications using Blazor, ASP.NET Core, and AI-enhanced workflows.
-                </div>
-                <div class="hero-actions">
-                    <a href="Arun-K-Software-developer.pdf" class="btn btn-primary" download>Download CV</a>
-                    <a href="#contact" class="btn btn-secondary">Let’s Chat</a>
-                </div>
-                <div class="hero-stats">3+ Years Experience</div>
-            </div>
-            <div class="hero-img-wrap">
-                <img src="arun-photo.jpg" alt="Arun K" />
-            </div>
-        </section>
-
-        <section id="about" class="section">
-            <h2 class="section-title">About Me</h2>
-            <p>
-                I am a passionate software developer with over three years of experience specializing in the Blazor framework. My expertise includes designing high-performance web components, collaborating in Agile teams, and implementing AI-assisted workflows.
+            <span class="hero-badge">ASP.NET CORE & BLAZOR</span>
+            <h1 class="hero-title">Software Developer</h1>
+            <p class="hero-desc" style="color: var(--text-muted); font-size: 1.2rem;">
+                Crafting robust enterprise solutions with .NET and modern web technologies.
             </p>
-        </section>
-
-        <section id="skills" class="section">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="card-grid">
-                <div class="card">
-                    <i class="fa-solid fa-code skill-icon" style="color:#2965f1"></i>
-                    <h3>Programming Languages</h3>
-                    <p>C#, JavaScript, TypeScript</p>
-                </div>
-                <div class="card">
-                    <i class="fa-brands fa-microsoft skill-icon" style="color:#0078d4"></i>
-                    <h3>Frameworks &amp; Tools</h3>
-                    <p>Blazor, ASP.NET</p>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-globe skill-icon" style="color:#e14c28"></i>
-                    <h3>Web Technologies</h3>
-                    <p>HTML, CSS</p>
-                </div>
-                <div class="card">
-                    <i class="fa-brands fa-git-alt skill-icon" style="color:#f05032"></i>
-                    <h3>Development Tools</h3>
-                    <p>Git, Visual Studio</p>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-robot skill-icon" style="color:#388e3c"></i>
-                    <h3>AI &amp; Productivity</h3>
-                    <p>Prompt Engineering, AI-enhanced workflow</p>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-check-to-slot skill-icon" style="color:#ffa000"></i>
-                    <h3>Practices</h3>
-                    <p>Agile Scrum, Code Reviews, Performance Optimization</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="section">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="card">
-                <h3>Software Developer Level 2</h3>
-                <p class="meta">Syncfusion · Chennai · Sept 2022 – Present</p>
-                <ul>
-                    <li>Architected and implemented advanced Blazor components.</li>
-                    <li>Optimized Gantt Chart load times by 40%.</li>
-                    <li>Authored 200+ B-Unit test cases for &gt;90% coverage.</li>
-                    <li>Led Agile ceremonies and mentored junior devs.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="education" class="section">
-            <h2 class="section-title">Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>2019 – 2022</h3>
-                    <p><strong>B.E. Electronics &amp; Communication Engineering</strong><br />Ramco Institute of Technology — CGPA: 7.3/10</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>2018</h3>
-                    <p><strong>Higher Secondary (HSC)</strong><br />N.A. Annaparaja Memorial Hr. Sec. School — 76.7%</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>2016</h3>
-                    <p><strong>Secondary School (SSLC)</strong><br />N.A. Annaparaja Memorial Hr. Sec. School — 80%</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-            <h2 class="section-title">Get In Touch</h2>
-            <p><i class="fas fa-phone-alt"></i> +91 63823 66755</p>
-            <p><i class="fas fa-envelope"></i> <a href="mailto:arunkavisiva@gmail.com">arunkavisiva@gmail.com</a></p>
-            <a href="https://linkedin.com/in/arun-k-siva" class="btn btn-primary">Connect on LinkedIn</a>
-        </section>
-    </main>
+            </section>
+        
+        </main>
 
     <script>
-        // Scroll fade/slide reveal using IntersectionObserver
-        document.addEventListener('DOMContentLoaded', () => {
-            const observerOptions = {
-                threshold: 0.1
-            };
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, observerOptions);
-            document.querySelectorAll('.hero-card, section').forEach(el => {
-                observer.observe(el);
-            });
-            // nav scroll smooth
-            document.querySelectorAll('.nav-links a').forEach(anchor => {
-                anchor.addEventListener('click', e => {
-                    e.preventDefault();
-                    const target = document.querySelector(anchor.getAttribute('href'));
-                    if (target) target.scrollIntoView({ behavior: 'smooth' });
-                });
+        const themeBtn = document.getElementById('theme-switch');
+        const body = document.body;
+
+        themeBtn.addEventListener('click', () => {
+            if (body.getAttribute('data-theme') === 'light') {
+                body.setAttribute('data-theme', 'dark');
+                themeBtn.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+            } else {
+                body.setAttribute('data-theme', 'light');
+                themeBtn.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
+            }
+        });
+
+        // Intersection Observer logic from original file preserved
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.style.opacity = 1;
             });
         });
+        document.querySelectorAll('section').forEach(el => observer.observe(el));
     </script>
 </body>
 </html>
