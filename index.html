@@ -13,6 +13,8 @@
         rel="stylesheet" />
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Devicon (for C# / tech icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.15.1/devicon.min.css" />
 
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -33,6 +35,7 @@
             <div class="nav-links" id="nav-links">
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
                 <a href="#achievements">Achievements</a>
                 <a href="#contact">Contact</a>
@@ -57,13 +60,13 @@
             </div>
             <h1><span class="gradient-text">Software Developer</span></h1>
             <p>
-                Results-driven professional with over <b>3.6 years of expertise</b> in <b>Blazor</b> and <b>ASP.NET Core
-                    MVC</b>. I specialize in engineering highly optimized enterprise web applications, creating custom
-                <b>AI agents</b> for automated bug resolution, and integrating <b>LLMs</b> to facilitate natural
-                language data processing.
+                Results-driven professional with over <b>3.7 years of expertise</b> in <b>Blazor</b>, <b>ASP.NET Core
+                    MVC</b>, and <b>C#</b>. I specialize in building high-performance, reusable enterprise UI
+                components — Spreadsheet, Data Grid, Dashboard, and Gantt Chart — while integrating <b>AI agents</b>
+                and <b>LLMs</b> for natural language data processing and automated bug resolution.
             </p>
             <div class="btn-container">
-                <a href="Arun K (Software Developer).pdf" class="btn btn-primary" download>
+                <a href="Arun_K_Final_CV.pdf" class="btn btn-primary" download>
                     <i class="fas fa-file-pdf"></i> Download Resume
                 </a>
                 <a href="https://www.linkedin.com/in/arun-k-siva/" target="_blank" class="btn btn-outline">
@@ -84,26 +87,87 @@
                             <h3 class="exp-role">Software Developer</h3>
                             <span class="exp-company"><i class="fas fa-building" style="margin-right: 5px;"></i>
                                 Syncfusion | <i class="fas fa-calendar-alt"
-                                    style="margin-right: 5px; margin-left: 8px;"></i> Sep 2022 — Present</span>
+                                    style="margin-right: 5px; margin-left: 8px;"></i> Sep 2022 — May 2026</span>
                             <ul>
-                                <li><b>AI Automation:</b> Engineered and deployed custom AI agents across the component
-                                    library to automate complex bug identification and resolution, reducing manual
-                                    debugging time by 35%.</li>
-                                <li><b>Generative AI Integration:</b> Designed and implemented AI-integrated Spreadsheet
-                                    features, enabling natural language prompt-driven data manipulation and output
-                                    generation to enhance user productivity.</li>
-                                <li><b>Blazor Development:</b> Developed and maintained high-performance web components
-                                    using the Blazor framework for over two years, ensuring scalability and
-                                    cross-platform integration.</li>
-                                <li><b>Feature Delivery:</b> Led the design and delivery of innovative Blazor
-                                    components, including a feature-rich Spreadsheet, boosting usability and
-                                    functionality metrics by 30%.</li>
+                                <li><b>Component Development:</b> Developed and maintained enterprise-grade web
+                                    components using Blazor and ASP.NET Core MVC, including Spreadsheet, Data Grid,
+                                    Dashboard, and Gantt Chart modules.</li>
+                                <li><b>API Integration:</b> Contributed to REST API and Web API integration for
+                                    component communication, ensuring smooth interoperability across services.</li>
+                                <li><b>Data Handling:</b> Implemented virtualization, filtering, sorting, grouping,
+                                    and high-volume data rendering capabilities for large datasets.</li>
+                                <li><b>Generative AI Integration:</b> Integrated AI-powered spreadsheet functionality
+                                    using Large Language Models (LLMs), enabling natural language prompt-driven data
+                                    manipulation.</li>
+                                <li><b>Database & Data Processing:</b> Implemented Entity Framework with Microsoft
+                                    SQL Server for efficient CRUD operations, using LINQ extensively for data
+                                    processing and business logic.</li>
+                                <li><b>AI Automation:</b> Built custom AI agents for automated bug analysis and
+                                    code-fix recommendations, reducing manual debugging effort.</li>
+                                <li><b>Quality & Testing:</b> Created and maintained NUnit test cases to reduce
+                                    regression issues, alongside performance optimization and critical issue
+                                    resolution.</li>
                                 <li><b>Performance Optimization:</b> Spearheaded the optimization of the Syncfusion
-                                    Gantt Chart component for Blazor ASP.NET, resolving key performance bottlenecks and
-                                    improving user experience by 25%.</li>
-                                <li><b>Collaboration:</b> Participated actively in Agile ceremonies and collaborated
-                                    with product managers to deliver user-centric solutions, diagnosing high-priority
-                                    issues and reducing bug resolution times by 40%.</li>
+                                    Gantt Chart component for Blazor ASP.NET, resolving key performance bottlenecks
+                                    and improving user experience by 25%.</li>
+                                <li><b>Collaboration & Mentorship:</b> Participated in Agile ceremonies, sprint
+                                    planning, and code reviews, while mentoring junior developers and promoting best
+                                    practices across teams.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Key Projects -->
+                <section class="glass-panel active" id="projects" style="padding-top: 2.5rem;">
+                    <h2 class="section-header"><i class="fas fa-diagram-project"></i> Key Projects</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h3 class="exp-role">Enterprise Spreadsheet Component</h3>
+                            <span class="exp-company"><i class="fas fa-hospital" style="margin-right: 5px;"></i>
+                                Domain: Healthcare</span>
+                            <ul>
+                                <li>Developed advanced spreadsheet features including data manipulation, formula
+                                    execution, undo/redo functionality, and natural language interactions.</li>
+                                <li>Implemented stack-based undo/redo and shifted from div-based to table-based
+                                    rendering for major performance gains.</li>
+                                <li>Created custom AI agents for data validation, integrating prompt-driven
+                                    operations into the spreadsheet.</li>
+                                <li>Built Playwright and NUnit automation suites achieving complete code coverage,
+                                    while applying Clean Architecture and SOLID principles.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-item">
+                            <h3 class="exp-role">Enterprise Data Grid</h3>
+                            <span class="exp-company"><i class="fas fa-table-cells" style="margin-right: 5px;"></i>
+                                Domain: Enterprise</span>
+                            <ul>
+                                <li>Developed enterprise-scale Blazor grid features including virtualization,
+                                    sorting, filtering, and grouping for large datasets.</li>
+                                <li>Collaborated on microservice-based backend integration for distributed data
+                                    handling, and delivered UI fixes across five different themes.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-item">
+                            <h3 class="exp-role">Enterprise Gantt Chart</h3>
+                            <span class="exp-company"><i class="fas fa-chart-gantt" style="margin-right: 5px;"></i>
+                                Domain: Enterprise</span>
+                            <ul>
+                                <li>Improved rendering efficiency and user interaction for large scheduling
+                                    datasets in the Blazor framework.</li>
+                                <li>Designed modular components aligned with Clean Architecture principles to
+                                    support extensibility and enterprise-scale usage.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-item">
+                            <h3 class="exp-role">AI Bug Resolution Agent</h3>
+                            <span class="exp-company"><i class="fas fa-robot" style="margin-right: 5px;"></i>
+                                AI Agents · Prompt Engineering · LLM Integration</span>
+                            <ul>
+                                <li>Created and deployed custom AI agents to automate bug-fixing workflows and
+                                    designed intelligent pipelines for bug detection and fix recommendations.</li>
+                                <li>Integrated LLM-driven insights into engineering workflows, applying Clean
+                                    Architecture principles to separate AI logic from application layers.</li>
                             </ul>
                         </div>
                     </div>
@@ -117,11 +181,11 @@
                         style="background: rgba(0, 120, 212, 0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(0, 120, 212, 0.2); margin-bottom: 1.5rem;">
                         <h3 class="info-title"
                             style="color: var(--secondary-light); display: flex; align-items: center; gap: 10px;">
-                            <i class="fas fa-table"></i> Natural Language Spreadsheet Assistant
+                            <i class="fas fa-chalkboard-user"></i> Internal Technical Mentor (2024–2026)
                         </h3>
                         <p class="info-desc" style="margin-top: 0.8rem;">
-                            Transformed traditional spreadsheet functionality by implementing an AI layer that
-                            interprets human language to execute complex formulas and perform automated data analysis.
+                            Guided junior developers in Blazor and ASP.NET Core MVC best practices, conducting code
+                            reviews and debugging sessions to improve team productivity.
                         </p>
                     </div>
 
@@ -129,12 +193,12 @@
                         style="background: rgba(92, 45, 145, 0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(92, 45, 145, 0.2);">
                         <h3 class="info-title"
                             style="color: var(--primary-light); display: flex; align-items: center; gap: 10px;">
-                            <i class="fas fa-bug-slash"></i> Autonomous Bug-Fixing Pipeline
+                            <i class="fas fa-brain"></i> AI-Enabled Product Innovation
                         </h3>
                         <p class="info-desc" style="margin-top: 0.8rem;">
-                            Created an advanced workflow where AI agents autonomously analyze component codebases to
-                            suggest and implement fixes, effectively maintaining 99% feature parity across component
-                            updates.
+                            Recognized internally for AI-enabled product innovation and performance optimization
+                            contributions, applying prompt engineering techniques to accelerate documentation,
+                            debugging, and feature development.
                         </p>
                     </div>
                 </section>
@@ -148,17 +212,19 @@
                 <section class="glass-panel active" id="skills" style="padding-top: 2.5rem;">
                     <h2 class="section-header"><i class="fas fa-code"></i> Tech Stack</h2>
                     <div class="skills-wrapper">
-                        <span class="skill-chip"><i class="devicon-csharp-plain"></i> C# / .NET</span>
+                        <span class="skill-chip"><i class="devicon-csharp-plain"></i> C# / .NET Core</span>
                         <span class="skill-chip"><i class="fas fa-fire"></i> Blazor</span>
-                        <span class="skill-chip"><i class="fas fa-desktop"></i> ASP.NET Core</span>
-                        <span class="skill-chip"><i class="fas fa-layer-group"></i> MVC Framework</span>
+                        <span class="skill-chip"><i class="fas fa-desktop"></i> ASP.NET Core MVC</span>
                         <span class="skill-chip"><i class="fab fa-js-square"></i> JavaScript</span>
                         <span class="skill-chip"><i class="fas fa-cubes"></i> TypeScript</span>
+                        <span class="skill-chip"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                        <span class="skill-chip"><i class="fas fa-database"></i> Entity Framework & SQL Server</span>
+                        <span class="skill-chip"><i class="fas fa-vial"></i> NUnit & Playwright</span>
                         <span class="skill-chip"><i class="fas fa-brain"></i> AI Prompt Engineering</span>
                         <span class="skill-chip"><i class="fas fa-server"></i> REST APIs & LLM Integrations</span>
-                        <span class="skill-chip"><i class="fas fa-project-diagram"></i> OOP & SOLID Principles</span>
-                        <span class="skill-chip"><i class="fas fa-database"></i> Data Structures (DSA)</span>
-                        <span class="skill-chip"><i class="fab fa-git-alt"></i> Git & Agile</span>
+                        <span class="skill-chip"><i class="fas fa-project-diagram"></i> Clean Architecture & SOLID</span>
+                        <span class="skill-chip"><i class="fab fa-git-alt"></i> Git & Agile Scrum</span>
+                        <span class="skill-chip"><i class="fas fa-laptop-code"></i> Visual Studio</span>
                     </div>
                 </section>
 
@@ -169,7 +235,8 @@
                     <div class="info-block" style="margin-bottom: 2rem;">
                         <h3 class="info-title">B.Tech / B.E. in ECE</h3>
                         <p class="info-subtitle">Ramco Institute of Technology, Rajapalayam</p>
-                        <p class="info-desc"><i class="fas fa-star" style="color: gold; font-size: 0.8rem;"></i> Grade:
+                        <p class="info-desc"><i class="fas fa-calendar-alt" style="font-size: 0.8rem;"></i> 2019 — 2022
+                            &nbsp;|&nbsp; <i class="fas fa-star" style="color: gold; font-size: 0.8rem;"></i> CGPA:
                             7.1/10</p>
                     </div>
 
@@ -201,6 +268,14 @@
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
                             <span style="font-weight: 500;">Chennai, INDIA</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-language"></i>
+                            <span style="font-weight: 500;">English, Tamil</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-circle-check"></i>
+                            <span style="font-weight: 500;">Immediate Joiner</span>
                         </li>
                     </ul>
                 </section>
