@@ -86,10 +86,11 @@
         .nav-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 1.5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 1rem;
         }
 
         .logo {
@@ -374,8 +375,13 @@
             display: flex; align-items: center; gap: 1rem;
             margin-bottom: 1rem; color: var(--text-muted);
         }
+        .contact-list li > *:last-child {
+            min-width: 0;
+            overflow-wrap: anywhere;
+        }
         .contact-list li i {
             width: 35px; height: 35px;
+            flex-shrink: 0;
             background: rgba(0, 120, 212, 0.1);
             color: var(--secondary-light);
             border-radius: 10px;
@@ -396,6 +402,7 @@
                 background: var(--surface);
                 backdrop-filter: blur(20px);
                 flex-direction: column;
+                align-items: flex-start;
                 padding: 2rem;
                 gap: 1.5rem;
                 border-bottom: 1px solid var(--border);
@@ -403,14 +410,68 @@
                 opacity: 0;
                 transition: all 0.3s ease;
                 z-index: -1;
+                pointer-events: none;
             }
             .nav-links.nav-open {
                 transform: translateY(0);
                 opacity: 1;
+                z-index: 999;
+                pointer-events: auto;
             }
             .mobile-menu-btn { display: block; }
 
             .hero h1 { font-size: 2.5rem; }
             section { padding: 4rem 0; }
             .glass-panel { padding: 1.5rem; }
+
+            .container { padding: 0 1.2rem; }
+
+            .section-header {
+                font-size: 1.4rem;
+                gap: 0.7rem;
+                flex-wrap: wrap;
+            }
+            .section-header i {
+                font-size: 1.3rem;
+                padding: 0.6rem;
+            }
+
+            .timeline {
+                padding-left: 1.2rem;
+            }
+            .timeline-item::before {
+                left: -1.55rem;
+                width: 10px;
+                height: 10px;
+            }
+            .timeline-item li {
+                font-size: 0.92rem;
+            }
+
+            .exp-role { font-size: 1.15rem; }
+            .exp-company {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 0.3rem;
+                font-size: 0.9rem;
+            }
+
+            .skill-chip {
+                font-size: 0.85rem;
+                padding: 0.5rem 1rem;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+            .btn-container { flex-direction: column; }
+        }
+
+        @media (max-width: 420px) {
+            .hero h1 { font-size: 2rem; }
+            .code-tag { font-size: 0.8rem; padding: 0.4rem 0.8rem; }
+            .hero p { font-size: 1.05rem; }
+            .logo { font-size: 1.25rem; }
         }
